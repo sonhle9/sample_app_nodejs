@@ -191,7 +191,7 @@ src\
 
 ## API Documentation
 
-To view the list of available APIs and their specifications, run the server and go to `http://localhost:3001/express/info/routes/` in your browser. This documentation page is automatically generated using the [swagger](https://swagger.io/) definitions written as comments in the route files.
+To view the list of available APIs and their specifications, run the server and go to `http://localhost:3001/express/info/routes` in your browser. This documentation page is automatically generated using the [swagger](https://swagger.io/) definitions written as comments in the route files.
 
 ### API Endpoints
 
@@ -444,7 +444,7 @@ node-boilerplate> db.users.find().limit(1)
 [
   {
     _id: ObjectId("624a52224f2baf43ba0e2f7c"),
-    role: 'admin',
+    role: 'user', ----> only can edit by MongoDB Compass to role: 'admin'
     isEmailVerified: true,
     name: 'Example User',
     email: 'example@railstutorial.org',
